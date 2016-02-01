@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Matriculas</string>
+    <string name="action_settings">Settings</string>
+    <string name="datosVehiculo">Datos Vehiculo</string>
+    <string name="tipo">Tipo</string>
+    <string name="modelo">Modelo</string>
+    <string name="bastidor">Nº Bastidor</string>
+    <string name="datosPropietario">Datos Propietario</string>
+    <string name="dni">DNI</string>
+    <string name="nombre">Nombre</string>
+    <string name="direccion">Direccion</string>
+    <string name="buscar">Buscar</string>
+    <string name="introduce">Introduce matricula</string>
+    <string name="title_activity_show_info">ShowInfo</string>
+    <string name="vehiculoText">Vehiculo</string>
+    <string name="propietarioText">Propietario</string>
+    <string name="licenseNotFound">Matricula no encontrada</string>
+
+</resources>

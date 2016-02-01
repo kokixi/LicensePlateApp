@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    >
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/policialocalmotril100"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentRight="false"
+        android:maxHeight="200dp"
+        android:maxWidth="200dp"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_above="@id/imageView"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.8">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/editText"
+            android:background="#ff2b7ed4"
+            android:layout_weight="0.25"
+            android:textColor="#ffffffff"
+            android:textSize="40sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            android:background="#ff2b7ed4"
+            android:layout_weight="1"
+            android:textColor="#ffffffff"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/search_button"
+            android:src="@drawable/ic_action_search"
+            android:background="#ff2b7ed4"
+            android:layout_weight="0.75"
+            android:adjustViewBounds="false" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layoutInfo"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:visibility="invisible"
+        android:layout_weight="0.20">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vehiculoText"
+            android:id="@+id/textVehiculo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="4dp"
+            />
+
+        <TextView
+            android:id="@+id/line"
+            android:text=""
+            style="@style/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/textVehiculo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/tipo"
+                android:id="@+id/tipo"
+                android:layout_weight="0.7"
+                android:gravity="right"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/tipoDatos"
+                android:layout_weight="0.3"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/modelo"
+                android:id="@+id/modelo"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.7"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/modeloDatos"
+                android:layout_weight="0.3"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/bastidor"
+                android:id="@+id/bastidor"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.7"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/bastidorDatos"
+                android:layout_weight="0.3"
+                />
+
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/propietarioText"
+            android:id="@+id/persona"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="4dp"
+            />
+
+        <TextView
+            android:id="@+id/line2"
+            android:text=""
+            style="@style/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/textVehiculo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/dni"
+                android:id="@+id/dni"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:layout_weight="0.7"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/dniDatos"
+                android:layout_weight="0.3"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/nombre"
+                android:id="@+id/nombre"
+                android:gravity="right"
+                android:layout_weight="0.7"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/nombreDatos"
+                android:layout_weight="0.3"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/direccion"
+                android:id="@+id/direccion"
+                android:gravity="right"
+                android:layout_weight="0.7"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text=""
+                android:id="@+id/direccionDatos"
+                android:layout_weight="0.3"
+                />
+        </TableRow>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layoutError"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/licenseNotFound"
+            android:gravity="center"
+            android:textSize="25sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
